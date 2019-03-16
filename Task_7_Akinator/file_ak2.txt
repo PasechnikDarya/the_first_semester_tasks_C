@@ -1,0 +1,15 @@
+{
+{
+human
+}
+animal
+{
+{
+bear
+}
+smartest_in_the_Earth
+{
+mouse
+}
+}
+}
