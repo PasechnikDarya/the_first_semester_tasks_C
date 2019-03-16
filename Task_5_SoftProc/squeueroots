@@ -1,0 +1,63 @@
+in
+popreg ax
+in
+popreg bx
+in
+popreg cx
+call :0
+end
+:0
+pushreg ax
+jiz :1
+pushreg bx
+sqr
+push 4
+pushreg ax
+pushreg cx
+mul
+mul
+sub
+sqrt
+popreg dx
+push 0
+pushreg bx
+sub
+popreg bx
+pushreg bx
+pushreg dx
+sub
+push 2
+pushreg ax
+mul
+div
+pushreg bx 
+pushreg dx
+add
+push 2
+pushreg ax
+mul
+div
+outt
+ret
+:1
+pushreg bx
+jiz :2
+push 0
+pushreg cx
+sub
+pushreg bx
+div
+outt
+ret
+:2
+pushreg cx
+jiz :3
+push 0
+outt
+ret
+:3
+push 9999
+outt
+ret
+meow
+

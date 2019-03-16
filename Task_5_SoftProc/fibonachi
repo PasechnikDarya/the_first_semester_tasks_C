@@ -1,0 +1,34 @@
+push 1
+popreg ax
+push 1
+popreg bx
+push 3
+popreg cx
+in 
+popreg dx
+push 1
+popreg bx
+call :0
+pushreg bx
+outt
+end
+:0
+pushreg dx
+pushreg cx
+jac :1
+pushreg ax
+pushreg bx
+add
+pushreg bx
+popreg ax
+popreg bx
+push 1
+pushreg cx
+add
+popreg cx
+call :0
+:1
+ret
+add
+meow
+
