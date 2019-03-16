@@ -1,0 +1,18 @@
+
+digraph G{
+node[color="green",fontsize=10, fillcolor="lightgrey"];
+edge[color="darkgreen",fontsize=12];
+rankdir=HR;
+elem0 [shape = record,label = "  <value> value:\n0 | <cur> address:\n0x55d7efef47f0| <next> next:\n0x55d7efef42e0 | <prev> prev:\n(nil)"];
+elem1 [shape = record,label = "  <value> value:\n3 | <cur> address:\n0x55d7efef42e0 | <next> next:\n0x55d7efef4770 | <prev> prev:\n0x55d7efef47f0"];
+elem0:<next> -> elem1:<cur>;
+elem1 [shape = record,label = "  <value> value:\n3 | <cur> address:\n0x55d7efef42e0| <next> next:\n0x55d7efef4770 | <prev> prev:\n0x55d7efef47f0"];
+elem2 [shape = record,label = "  <value> value:\n100 | <cur> address:\n0x55d7efef4770 | <next> next:\n0x55d7efef47b0 | <prev> prev:\n0x55d7efef42e0"];
+elem1:<next> -> elem2:<cur>;
+elem2 [shape = record,label = "  <value> value:\n100 | <cur> address:\n0x55d7efef4770| <next> next:\n0x55d7efef47b0 | <prev> prev:\n0x55d7efef42e0"];
+elem3 [shape = record,label = "  <value> value:\n4 | <cur> address:\n0x55d7efef47b0 | <next> next:\n(nil) | <prev> prev:\n0x55d7efef4770"];
+elem2:<next> -> elem3:<cur>;
+elem3:<prev> -> elem2:<cur>[style="dashed"];
+elem2:<prev> -> elem1:<cur>[style="dashed"];
+elem1:<prev> -> elem0:<cur>[style="dashed"];
+}
