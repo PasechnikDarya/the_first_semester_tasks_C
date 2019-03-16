@@ -1,0 +1,42 @@
+digraph
+{
+node[shape = "septagon", color="darkgreen",fontsize=10, style="filled", fillcolor = "#9CC98D"];
+edge[color="darkgreen",fontsize=12];
+		hey0[label = "+", shape = "circle", color="white", style="filled", fillcolor = "#C390D4"];
+		hey0->hey1;
+		hey1[label = "*", shape = "circle", color="white", style="filled", fillcolor = "#C390D4"];
+		hey1->hey2;
+		hey2[label = "3.000000", shape = "septagon", color="white", style="filled", fillcolor = "#A1D490"];
+		hey1->hey3;
+		hey3[label = "c", shape = "circle", color="white", style="filled", fillcolor = "#C390D4"];
+		hey3->hey4;
+		hey4[label = "*", shape = "circle", color="white", style="filled", fillcolor = "#C390D4"];
+		hey4->hey5;
+		hey5[label = "3.000000", shape = "septagon", color="white", style="filled", fillcolor = "#A1D490"];
+		hey4->hey6;
+		hey6[label = "x", shape = "octagon", color="white", style="filled", fillcolor = "#90C3D4"];
+		hey0->hey7;
+		hey7[label = "*", shape = "circle", color="white", style="filled", fillcolor = "#C390D4"];
+		hey7->hey8;
+		hey8[label = "-1.000000", shape = "septagon", color="white", style="filled", fillcolor = "#A1D490"];
+		hey7->hey9;
+		hey9[label = "*", shape = "circle", color="white", style="filled", fillcolor = "#C390D4"];
+		hey9->hey10;
+		hey10[label = "s", shape = "circle", color="white", style="filled", fillcolor = "#C390D4"];
+		hey10->hey11;
+		hey11[label = "^", shape = "circle", color="white", style="filled", fillcolor = "#C390D4"];
+		hey11->hey12;
+		hey12[label = "x", shape = "octagon", color="white", style="filled", fillcolor = "#90C3D4"];
+		hey11->hey13;
+		hey13[label = "3.000000", shape = "septagon", color="white", style="filled", fillcolor = "#A1D490"];
+		hey9->hey14;
+		hey14[label = "*", shape = "circle", color="white", style="filled", fillcolor = "#C390D4"];
+		hey14->hey15;
+		hey15[label = "3.000000", shape = "septagon", color="white", style="filled", fillcolor = "#A1D490"];
+		hey14->hey16;
+		hey16[label = "^", shape = "circle", color="white", style="filled", fillcolor = "#C390D4"];
+		hey16->hey17;
+		hey17[label = "x", shape = "octagon", color="white", style="filled", fillcolor = "#90C3D4"];
+		hey16->hey18;
+		hey18[label = "2.000000", shape = "septagon", color="white", style="filled", fillcolor = "#A1D490"];
+}
