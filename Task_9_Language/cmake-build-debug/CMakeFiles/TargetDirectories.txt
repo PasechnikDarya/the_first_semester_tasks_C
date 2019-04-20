@@ -1,0 +1,3 @@
+/home/fox/Документы/1_курс/1_семестр/программирование/Language/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/fox/Документы/1_курс/1_семестр/программирование/Language/cmake-build-debug/CMakeFiles/Language.dir
+/home/fox/Документы/1_курс/1_семестр/программирование/Language/cmake-build-debug/CMakeFiles/edit_cache.dir

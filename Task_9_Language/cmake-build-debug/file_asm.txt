@@ -1,0 +1,81 @@
+jmp :1
+:0
+popopreg [ax+1]
+popopreg [ax+2]
+pushreg ax
+push 6
+add
+popreg ax
+pushopreg [ax+-4]
+push 1
+je :11
+jmp :12
+:11
+push 1
+popopreg [ax+-5]
+:12
+pushopreg [ax+-4]
+push 2
+je :13
+jmp :14
+:13
+push 1
+popopreg [ax+-5]
+:14
+pushopreg [ax+-4]
+push 2
+jb :15
+jmp :16
+:15
+push 0
+popopreg [ax+-3]
+push 0
+popopreg [ax+-2]
+push 0
+popopreg [ax+-1]
+push 0
+popopreg [ax+0]
+pushopreg [ax+-4]
+push 1
+sub
+popopreg [ax+-3]
+pushopreg [ax+-4]
+push 2
+sub
+popopreg [ax+-2]
+pushopreg [ax+-3]
+pushopreg [ax+-1]
+call :0
+popopreg [ax+-3]
+popopreg [ax+-1]
+pushopreg [ax+-2]
+pushopreg [ax+0]
+call :0
+popopreg [ax+-2]
+popopreg [ax+0]
+pushopreg [ax+-1]
+pushopreg [ax+0]
+add
+popopreg [ax+-5]
+:16
+pushopreg [ax+-5]
+pushopreg [ax+-4]
+pushreg ax
+push 6
+sub
+popreg ax
+ret
+:1
+in
+popop 0
+push 0
+popop 1
+pushop 0
+pushop 1
+call :0
+popop 0
+popop 1
+pushop 1
+out
+end
+meow

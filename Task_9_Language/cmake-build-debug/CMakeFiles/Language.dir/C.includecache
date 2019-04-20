@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/fox/Документы/1_курс/1_семестр/программирование/Language/asm_cr.c
+head.h
+/home/fox/Документы/1_курс/1_семестр/программирование/Language/head.h
+
+/home/fox/Документы/1_курс/1_семестр/программирование/Language/head.h
+stdio.h
+-
+assert.h
+-
+stdlib.h
+-
+string.h
+-
+math.h
+-
+
+/home/fox/Документы/1_курс/1_семестр/программирование/Language/langu_tree.c
+head.h
+/home/fox/Документы/1_курс/1_семестр/программирование/Language/head.h
+
+/home/fox/Документы/1_курс/1_семестр/программирование/Language/main.c
+head.h
+/home/fox/Документы/1_курс/1_семестр/программирование/Language/head.h
+langu_tree.c
+/home/fox/Документы/1_курс/1_семестр/программирование/Language/langu_tree.c
+tree_cr.c
+/home/fox/Документы/1_курс/1_семестр/программирование/Language/tree_cr.c
+asm_cr.c
+/home/fox/Документы/1_курс/1_семестр/программирование/Language/asm_cr.c
+
+/home/fox/Документы/1_курс/1_семестр/программирование/Language/tree_cr.c
+head.h
+/home/fox/Документы/1_курс/1_семестр/программирование/Language/head.h
+
